@@ -3,7 +3,6 @@
 animal_type = -1;
 animal_beats = -1;
 
-image_speed = 0.1;
 image_xscale = 2;
 image_yscale = 2;
 
@@ -14,27 +13,32 @@ function setType(type, beats) {
 }
 
 
-function findClosestTarget() {
+function findClosestTargets() {
 	var targetPrey = noone;
-	var targetPreyDist = 0;
+	var targetPreyDist = 100000;
 	var targetPredator = noone;
-	var targetPredatorDist = 0;
+	var targetPredatorDist = 100000;
 	with (oAnimalFighter) {
 		if (self == other) continue;
 		var dist = distance_to_object(other);
 		if (other.beats(self)) {
-			if (targetPrey == noone or targetPreyDist > dist) {
+			if (targetPreyDist > dist) {
 				targetPrey = self;
 				targetPreyDist = dist;
 			}
 		} else if (self.beats(other)) {
-			if (targetPredator == noone or targetPredatorDist > dist) {
+			if (targetPredatorDist > dist) {
 				targetPredator = self;
 				targetPredatorDist = dist;
 			}
 		}
 	}
-	return [targetPrey, targetPredator];
+	return {
+		targetPrey: targetPrey,
+		targetPreyDist: targetPreyDist,
+		targetPredator: targetPredator,
+		targetPredatorDist: targetPredatorDist,
+	};
 }
 
 function beats(animal) {
