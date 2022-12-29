@@ -13,6 +13,7 @@
     {"id":{"name":"cancel_click","path":"sounds/cancel_click/cancel_click.yy",},"order":14,},
     {"id":{"name":"sElephant","path":"sprites/sElephant/sElephant.yy",},"order":11,},
     {"id":{"name":"sAraraAzul","path":"sprites/sAraraAzul/sAraraAzul.yy",},"order":0,},
+    {"id":{"name":"_macros","path":"scripts/_macros/_macros.yy",},"order":12,},
     {"id":{"name":"_24_PixelSky_layer01","path":"sprites/_24_PixelSky_layer01/_24_PixelSky_layer01.yy",},"order":0,},
     {"id":{"name":"sRat","path":"sprites/sRat/sRat.yy",},"order":31,},
     {"id":{"name":"sFox","path":"sprites/sFox/sFox.yy",},"order":14,},

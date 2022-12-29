@@ -3,6 +3,6 @@ if (other.beats(self)) {
 }
 
 var delta = [x - other.x, y - other.y];
-delta = vector_normalize(delta);
+delta = vector_multiply(vector_normalize(delta), MOVE_SPEED);
 x += delta[0];
 y += delta[1];

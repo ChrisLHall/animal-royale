@@ -15,18 +15,26 @@ function setType(type, beats) {
 
 
 function findClosestTarget() {
-	var target = noone;
-	var targetDist = 0;
+	var targetPrey = noone;
+	var targetPreyDist = 0;
+	var targetPredator = noone;
+	var targetPredatorDist = 0;
 	with (oAnimalFighter) {
 		if (self == other) continue;
-		if (!other.beats(self)) continue;
 		var dist = distance_to_object(other);
-		if (target == noone or targetDist > dist) {
-			target = self;
-			targetDist = dist;
+		if (other.beats(self)) {
+			if (targetPrey == noone or targetPreyDist > dist) {
+				targetPrey = self;
+				targetPreyDist = dist;
+			}
+		} else if (self.beats(other)) {
+			if (targetPredator == noone or targetPredatorDist > dist) {
+				targetPredator = self;
+				targetPredatorDist = dist;
+			}
 		}
 	}
-	return target;
+	return [targetPrey, targetPredator];
 }
 
 function beats(animal) {
