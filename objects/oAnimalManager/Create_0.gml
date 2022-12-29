@@ -13,9 +13,11 @@ function assignStartingType(animalFighter) {
 	animalFighter.setType(entry[0], entry[1]);
 }
 
-
-for (var i = 0; i < SPAWN_COUNT; i++) {
-	var animal = instance_create_layer(irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), "Instances", oAnimalFighter);
-	assignStartingType(animal);
+function setupField() {
+	for (var i = 0; i < SPAWN_COUNT; i++) {
+		var animal = instance_create_layer(irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), "Instances", oAnimalFighter);
+		assignStartingType(animal);
+	}
 }
 	
+setupField();
