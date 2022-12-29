@@ -1,12 +1,22 @@
 /// @description 
 
+
+// I want one main cycle, with one branch and one offshoot
+// main: grizzly -> moose -> wolf -> chicken -> snake
+// side: mouse -> elephant/giraffe -> wolf -> owl
+
 // the first in a pair is the type of animal. The second is who they can beat.
 animal_types = [
 	[sChicken, sSnake],
-	[sLion, sChicken],
-	[sSnake, sLion],
+	[sWolf, [sChicken, sOwl]],
+	[sSnake, sGrizzly],
+	[sGrizzly, sMoose],
+	[sMoose, sWolf],
+	[sOwl, sRat],
+	[sRat, [sElephant, sGiraffe]],
+	[sElephant, sWolf],
+	[sGiraffe, sWolf],
 ];
-
 
 function assignStartingType(animalFighter) {
 	var entry = animal_types[irandom_range(0, array_length(animal_types) - 1)];

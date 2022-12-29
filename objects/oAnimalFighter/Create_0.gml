@@ -19,7 +19,7 @@ function findClosestTarget() {
 	var targetDist = 0;
 	with (oAnimalFighter) {
 		if (self == other) continue;
-		if (self.animal_type != other.animal_beats) continue;
+		if (!other.beats(self)) continue;
 		var dist = distance_to_object(other);
 		if (target == noone or targetDist > dist) {
 			target = self;
@@ -27,4 +27,12 @@ function findClosestTarget() {
 		}
 	}
 	return target;
+}
+
+function beats(animal) {
+	if (is_array(animal_beats)) {
+		return array_index_of(animal_beats, animal.animal_type) != -1;
+	} else {
+		return animal.animal_type == animal_beats;
+	}
 }

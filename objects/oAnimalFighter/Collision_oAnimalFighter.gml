@@ -1,4 +1,4 @@
-if (animal_type == other.animal_beats) {
+if (beats(other)) {
 	setType(other.animal_type, other.animal_beats);
 }
 
