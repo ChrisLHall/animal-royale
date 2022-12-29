@@ -19,7 +19,7 @@ if (followPrey) {
 
 move = vector_multiply(vector_normalize(move), MOVE_SPEED);
 if (scared) {
-	move = vector_multiply(move, .9);
+	move = vector_multiply(move, .8);
 }
 
 x += move[0];
