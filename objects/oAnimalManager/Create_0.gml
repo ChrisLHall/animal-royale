@@ -9,11 +9,12 @@ animal_types = [
 
 
 function assignStartingType(animalFighter) {
-	animalFighter.setType(animal_types[irandom_range(0, array_length(animal_types) - 1)]);
+	var entry = animal_types[irandom_range(0, array_length(animal_types) - 1)];
+	animalFighter.setType(entry[0], entry[1]);
 }
 
 
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < SPAWN_COUNT; i++) {
 	var animal = instance_create_layer(irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), "Instances", oAnimalFighter);
 	assignStartingType(animal);
 }
