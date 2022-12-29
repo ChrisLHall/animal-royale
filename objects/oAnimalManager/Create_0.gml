@@ -6,6 +6,7 @@
 // side: mouse -> elephant/giraffe -> wolf -> owl
 
 // the first in a pair is the type of animal. The second is who they can beat.
+/*
 animal_types = [
 	[sChicken, sSnake],
 	[sWolf, [sChicken, sOwl]],
@@ -17,6 +18,15 @@ animal_types = [
 	[sElephant, sWolf],
 	[sGiraffe, sWolf],
 ];
+*/
+animal_types = [
+	[sLion, [sElephant, sGiraffe]],
+	[sElephant, [sGiraffe, sSnake, sOwl]],
+	[sGiraffe, [sOwl, sRat]],
+	[sOwl, [sSnake, sLion, sRat]],
+	[sSnake, [sRat, sLion, sGiraffe]],
+	[sRat, [sLion, sElephant]],
+]
 
 function assignStartingType(animalFighter) {
 	var entry = animal_types[irandom_range(0, array_length(animal_types) - 1)];
@@ -25,9 +35,13 @@ function assignStartingType(animalFighter) {
 
 function setupField() {
 	for (var i = 0; i < SPAWN_COUNT; i++) {
-		var animal = instance_create_layer(irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), "Instances", oAnimalFighter);
-		assignStartingType(animal);
+		createRandomAnimal();
 	}
+}
+
+function createRandomAnimal() {
+	var animal = instance_create_layer(irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), "Instances", oAnimalFighter);
+	assignStartingType(animal);
 }
 	
 setupField();

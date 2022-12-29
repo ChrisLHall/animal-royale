@@ -1,4 +1,4 @@
-if (beats(other)) {
+if (other.beats(self)) {
 	setType(other.animal_type, other.animal_beats);
 }
 

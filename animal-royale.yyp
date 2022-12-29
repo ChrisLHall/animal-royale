@@ -16,6 +16,7 @@
     {"id":{"name":"_24_PixelSky_layer01","path":"sprites/_24_PixelSky_layer01/_24_PixelSky_layer01.yy",},"order":0,},
     {"id":{"name":"sRat","path":"sprites/sRat/sRat.yy",},"order":31,},
     {"id":{"name":"sFox","path":"sprites/sFox/sFox.yy",},"order":14,},
+    {"id":{"name":"oMakeRandomAnimal","path":"objects/oMakeRandomAnimal/oMakeRandomAnimal.yy",},"order":3,},
     {"id":{"name":"fLevelComplete","path":"fonts/fLevelComplete/fLevelComplete.yy",},"order":4,},
     {"id":{"name":"_46_PixelSky_layer05","path":"sprites/_46_PixelSky_layer05/_46_PixelSky_layer05.yy",},"order":4,},
     {"id":{"name":"_46_PixelSky_layer04","path":"sprites/_46_PixelSky_layer04/_46_PixelSky_layer04.yy",},"order":3,},
