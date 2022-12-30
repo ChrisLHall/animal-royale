@@ -19,6 +19,7 @@ animal_types = [
 	[sGiraffe, sWolf],
 ];
 */
+/*
 animal_types = [
 	[sLion, [sElephant, sGiraffe]],
 	[sElephant, [sGiraffe, sSnake, sOwl, sTurtle]],
@@ -27,6 +28,16 @@ animal_types = [
 	[sSnake, [sRat, sLion, sGiraffe]],
 	[sRat, [sLion, sElephant, sTurtle]],
 	[sTurtle, [sLion, sOwl, sSnake]],
+]
+*/
+animal_types = [
+	[sLion, [sElephant, sGiraffe, sTurtle]],
+	[sElephant, [sGiraffe, sTurtle, sOwl]],
+	[sGiraffe, [sTurtle, sOwl, sSnake]],
+	[sTurtle, [sOwl, sSnake, sRat]],
+	[sOwl, [sSnake, sRat, sLion]],
+	[sSnake, [sRat, sLion, sElephant]],
+	[sRat, [sLion, sElephant, sGiraffe]],
 ]
 
 function assignStartingType(animalFighter) {
