@@ -59,7 +59,7 @@ function createBalancedTypesArray(animalList) {
 	}
 	return result;
 }
-animal_types = createBalancedTypesArray([sGrizzly, sPanda, sLion, sRhino, sElephant, sGiraffe, sPig, sSheep, sTurtle, sPenguin, sRacoon, sCat, sOwl, sSnake, sFrog, sChicken, sRat]);
+animal_types = createBalancedTypesArray([sGrizzly, sPanda, sLion, sRhino, sElephant, sMoose, sBull, sGiraffe, sPig, sSheep, sTurtle, sPenguin, sRacoon, sCat, sOwl, sSnake, sFrog, sChicken, sRat]);
 
 
 function assignStartingType(animalFighter) {
