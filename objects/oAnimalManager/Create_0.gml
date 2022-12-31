@@ -67,6 +67,14 @@ function assignStartingType(animalFighter) {
 	animalFighter.setType(entry[0], entry[1]);
 }
 
+function fullReset() {
+	with (oAnimalFighter) {
+		instance_destroy();
+	}
+
+	setupField();
+}
+
 function setupField() {
 	for (var i = 0; i < SPAWN_COUNT; i++) {
 		createRandomAnimal();
@@ -90,4 +98,4 @@ function destroyRandomAnimal() {
 	}
 }
 
-setupField();
+fullReset();

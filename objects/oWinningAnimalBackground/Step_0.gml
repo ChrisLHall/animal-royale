@@ -11,7 +11,11 @@ with (oAnimalFighter) {
 }
 if (allSame) {
 	sprite_index = allSameType;
+	if (image_alpha == 0) {
+		alarm_set(0, room_speed * 5);
+	}
 	image_alpha = min(image_alpha + 0.01, 0.2);
 } else {
 	image_alpha = 0;
+	alarm_set(0, -1);
 }
