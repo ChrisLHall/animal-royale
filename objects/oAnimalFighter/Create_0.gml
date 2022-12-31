@@ -20,13 +20,14 @@ function findClosestTargets() {
 	var targetPredatorDist = 100000;
 	with (oAnimalFighter) {
 		if (self == other) continue;
+		if (self.animal_type == other.animal_type) continue;
 		var dist = distance_to_object(other);
 		if (other.beats(self)) {
 			if (targetPreyDist > dist) {
 				targetPrey = self;
 				targetPreyDist = dist;
 			}
-		} else if (self.beats(other)) {
+		} else {
 			if (targetPredatorDist > dist) {
 				targetPredator = self;
 				targetPredatorDist = dist;

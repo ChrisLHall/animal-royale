@@ -3,3 +3,4 @@ with (oAnimalFighter) {
 }
 
 oAnimalManager.setupField();
+oWinningAnimalBackground.reset();

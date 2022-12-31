@@ -8,6 +8,7 @@
     {"id":{"name":"sWolf","path":"sprites/sWolf/sWolf.yy",},"order":37,},
     {"id":{"name":"_46_PixelSky_layer02","path":"sprites/_46_PixelSky_layer02/_46_PixelSky_layer02.yy",},"order":1,},
     {"id":{"name":"sBull","path":"sprites/sBull/sBull.yy",},"order":2,},
+    {"id":{"name":"oWinningAnimalBackground","path":"objects/oWinningAnimalBackground/oWinningAnimalBackground.yy",},"order":4,},
     {"id":{"name":"sSnake","path":"sprites/sSnake/sSnake.yy",},"order":39,},
     {"id":{"name":"ExpStepTowards","path":"scripts/ExpStepTowards/ExpStepTowards.yy",},"order":2,},
     {"id":{"name":"cancel_click","path":"sounds/cancel_click/cancel_click.yy",},"order":14,},
