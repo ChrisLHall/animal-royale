@@ -55,5 +55,17 @@ function createRandomAnimal() {
 	var animal = instance_create_layer(irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), irandom_range(SPAWN_PADDING, room_width - 2 * SPAWN_PADDING), "Instances", oAnimalFighter);
 	assignStartingType(animal);
 }
-	
+
+function destroyRandomAnimal() {
+	var count = instance_number(oAnimalFighter);
+	var randIndex = irandom_range(0, count - 1);
+	with (oAnimalFighter) {
+		if (randIndex == 0) {
+			instance_destroy();
+			break;
+		}
+		randIndex--;
+	}
+}
+
 setupField();
