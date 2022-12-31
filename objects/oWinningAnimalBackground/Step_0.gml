@@ -13,6 +13,9 @@ if (allSame) {
 	sprite_index = allSameType;
 	if (image_alpha == 0) {
 		alarm_set(0, room_speed * 5);
+		if (!oMuteButton.mute) {
+			audio_play_sound(synth, 1, false);
+		}
 	}
 	image_alpha = min(image_alpha + 0.01, 0.2);
 } else {
