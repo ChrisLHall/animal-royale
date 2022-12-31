@@ -6,6 +6,7 @@
 // side: mouse -> elephant/giraffe -> wolf -> owl
 
 // the first in a pair is the type of animal. The second is who they can beat.
+// this one doesn't work because it isn't fully connected
 /*
 animal_types = [
 	[sChicken, sSnake],
@@ -19,6 +20,7 @@ animal_types = [
 	[sGiraffe, sWolf],
 ];
 */
+// this one tends to have Elephant and Rat win
 /*
 animal_types = [
 	[sLion, [sElephant, sGiraffe]],
@@ -30,6 +32,8 @@ animal_types = [
 	[sTurtle, [sLion, sOwl, sSnake]],
 ]
 */
+// this one is good
+/*
 animal_types = [
 	[sLion, [sElephant, sGiraffe, sTurtle]],
 	[sElephant, [sGiraffe, sTurtle, sOwl]],
@@ -39,6 +43,24 @@ animal_types = [
 	[sSnake, [sRat, sLion, sElephant]],
 	[sRat, [sLion, sElephant, sGiraffe]],
 ]
+*/
+
+// must be an odd number of animals to work correctly
+function createBalancedTypesArray(animalList) {
+	var numAnimals = array_length(animalList);
+	var numBeat = (numAnimals - 1) / 2;
+	var result = [];
+	for (var i = 0; i < numAnimals; i++) {
+		var beats = [];
+		for (var j = 0; j < numBeat; j++) {
+			array_push(beats, animalList[(i + 1 + j) mod numAnimals]);
+		}
+		array_push(result, [animalList[i], beats]);
+	}
+	return result;
+}
+animal_types = createBalancedTypesArray([sGrizzly, sPanda, sLion, sRhino, sElephant, sGiraffe, sPig, sSheep, sTurtle, sPenguin, sCat, sOwl, sSnake, sFrog, sChicken, sRat]);
+
 
 function assignStartingType(animalFighter) {
 	var entry = animal_types[irandom_range(0, array_length(animal_types) - 1)];
