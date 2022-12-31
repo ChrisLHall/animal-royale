@@ -17,7 +17,7 @@
   "soundFile": "click__2_.wav",
   "duration": 0.014603,
   "parent": {
-    "name": "animal-royale",
-    "path": "animal-royale.yyp",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
 }

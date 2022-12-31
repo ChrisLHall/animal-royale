@@ -22,6 +22,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_70F0CD9B","properties":[],"isDnd":false,"objectId":{"name":"oAddButton","path":"objects/oAddButton/oAddButton.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":545.0,"y":663.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4C75C507","properties":[],"isDnd":false,"objectId":{"name":"oSubtractButton","path":"objects/oSubtractButton/oSubtractButton.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":604.0,"y":663.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1821F808","properties":[],"isDnd":false,"objectId":{"name":"oMuteButton","path":"objects/oMuteButton/oMuteButton.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":8.0,"y":663.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_31E4B3CB","properties":[],"isDnd":false,"objectId":{"name":"oScreenScaler","path":"objects/oScreenScaler/oScreenScaler.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":0.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Manager","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_339558E9","properties":[],"isDnd":false,"objectId":{"name":"oAnimalManager","path":"objects/oAnimalManager/oAnimalManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -38,6 +39,7 @@
     {"name":"inst_70F0CD9B","path":"rooms/royale/royale.yy",},
     {"name":"inst_4C75C507","path":"rooms/royale/royale.yy",},
     {"name":"inst_1821F808","path":"rooms/royale/royale.yy",},
+    {"name":"inst_31E4B3CB","path":"rooms/royale/royale.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

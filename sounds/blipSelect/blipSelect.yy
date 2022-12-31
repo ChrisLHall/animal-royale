@@ -17,7 +17,7 @@
   "soundFile": "blipSelect.wav",
   "duration": 0.042426,
   "parent": {
-    "name": "animal-royale",
-    "path": "animal-royale.yyp",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
 }

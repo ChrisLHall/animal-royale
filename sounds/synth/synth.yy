@@ -17,7 +17,7 @@
   "soundFile": "synth.wav",
   "duration": 2.244626,
   "parent": {
-    "name": "animal-royale",
-    "path": "animal-royale.yyp",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
 }
